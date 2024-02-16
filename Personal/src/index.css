@@ -21,7 +21,7 @@
   background-color: #5ED4FF !important;
 }
 .bg-a {
-  background-color: #004891 !important;
+  background-color: #00BB99 !important;
 }
 .primary {
   color: #0081AF !important;
@@ -30,7 +30,16 @@
   color: #5ED4FF !important;
 }
 .accent {
-  color: #004891 !important;
+  color: #00BB99 !important;
+}
+.fill-p:hover {
+  fill: #0081AF !important;
+}
+.fill-s:hover {
+  fill: #5ED4FF !important;
+}
+.fill-a:hover {
+  fill: #00BB99 !important;
 }
 /* COLORS */
 .fade-in {

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT */
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* COLORS */
+.cBackground {
+  background-color: #202021 !important;
+}
+.bg-p {
+  background-color: #0081AF !important;
+}
+.bg-s {
+  background-color: #5ED4FF !important;
+}
+.bg-a {
+  background-color: #004891 !important;
+}
+.primary {
+  color: #0081AF !important;
+}
+.secondary {
+  color: #5ED4FF !important;
+}
+.accent {
+  color: #004891 !important;
+}
+/* COLORS */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

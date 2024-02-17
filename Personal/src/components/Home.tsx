@@ -16,7 +16,7 @@ function Home() {
       }, 700);
     };
 
-    const intervalId = setInterval(changePhrase, 3000); // Change text every 1.5 seconds
+    const intervalId = setInterval(changePhrase, 3000);
 
     return () => clearInterval(intervalId);
   }, [currentPhrase]);

@@ -5,7 +5,7 @@ import gradient from '../assets/gradientPrimAcc.svg';
 function About() {
   
   return (
-    <div id='about' className='h-full w-screen pt-28 pb-28 cBackground flex justify-center flex-col lg:flex-row items-center text-white' style={{ backgroundImage: `url(${gradient})`, backgroundSize: 'cover' }}>
+    <div id='about' className='h-full w-screen pt-28 pb-28 cBackground flex justify-center flex-col lg:flex-row items-center text-white' style={{ backgroundImage: `url(${gradient}) !important`, backgroundSize: 'cover !important' }}>
         <div className='m-10 w-full h-full '>
             <h1 className='m-3 text-5xl font-extrabold secondary'>ABOUT ME</h1>
             <h1 className='m-3 text-xl font-extrabold primary'>Programming, Music, Traveling</h1>

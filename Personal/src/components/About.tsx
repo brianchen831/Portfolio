@@ -1,10 +1,11 @@
 import '../index.css';
 import aboutImage from '../assets/aboutImage.jpg';
+import gradient from '../assets/gradientPrimAcc.svg';
 
 function About() {
   
   return (
-    <div id='about' className='h-full w-screen pt-28 cBackground flex justify-center flex-col lg:flex-row items-center text-white'>
+    <div id='about' className='h-full w-screen pt-28 pb-28 cBackground flex justify-center flex-col lg:flex-row items-center text-white' style={{ backgroundImage: `url(${gradient})`, backgroundSize: 'cover' }}>
         <div className='m-10 w-full h-full '>
             <h1 className='m-3 text-5xl font-extrabold secondary'>ABOUT ME</h1>
             <h1 className='m-3 text-xl font-extrabold primary'>Programming, Music, Traveling</h1>
@@ -19,7 +20,7 @@ function About() {
             </p>
         </div>
         <div className='m-10 w-full h-full'>
-            <img className='rounded' src={`${aboutImage}`} alt="Image of Me" />
+            <img className='rounded p-5 lg:p-0' src={`${aboutImage}`} alt="Image of Me" />
         </div>
     </div>
   );

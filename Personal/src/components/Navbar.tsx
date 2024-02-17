@@ -81,8 +81,8 @@ function Navbar() {
                 </a>
                 ))}
                 <svg className='w-20 h-2 stroke-white' xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="5" x2="100" y2="5" stroke-width="2" />
-</svg>
+                    <line x1="0" y1="5" x2="100" y2="5" stroke-width="2" />
+                </svg>
 
                 <a
                     href="https://github.com/Eric8900"

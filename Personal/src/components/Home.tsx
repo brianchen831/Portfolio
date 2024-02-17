@@ -26,7 +26,7 @@ function Home() {
         <div className='p-5 text-center'>
             <h1 className='text-4xl'>
             Hi, I'm <b className='secondary'>Eric Chen</b>, and I'm a{' '}
-            <span id='changingText' className={`${fade ? 'fade-in' : 'fade-out'} primary`}>
+            <span id='changingText' className={`${fade ? 'fade-in' : 'fade-out'} accent`}>
                 {currentPhrase}
             </span>{' '}
             from Texas.

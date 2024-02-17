@@ -12,6 +12,14 @@ function Projects() {
         <div className='flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-10'>
             <Card
             imageUrl="https://fakeimg.pl/600x400"
+            title="Interstellar"
+            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'ThreeJS', color: 'cBackground' }]}
+            description="This is the website for my Webmaster project in Technology Student Association (TSA). It is intended to promote space exploration and tourism."
+            button1Href='https://santiago11234.github.io/InterStellar/'
+            button2Href='https://github.com/Eric8900/InterStellar'
+            />
+            <Card
+            imageUrl="https://fakeimg.pl/600x400"
             title="GPT Plus"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'OpenAI API', color: 'cBackground' }]}
             description="I created this project to not only save money on GPT-4 but also to learn more about APIs and front-end development with Bootstrap."

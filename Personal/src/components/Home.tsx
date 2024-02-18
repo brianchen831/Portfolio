@@ -3,7 +3,7 @@ import '../index.css';
 import { motion } from 'framer-motion';
 
 function Home() {
-  const phrases = ['junior', 'web developer', 'competitive programmer', 'singer', 'runner'];
+  const phrases = ['junior', 'web developer', 'competitive programmer', 'world traveler', 'gamer', 'singer', 'sprinter'];
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
   const [fade, setFade] = useState(true);
 

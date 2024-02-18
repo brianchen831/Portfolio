@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../index.css';
+import { motion } from 'framer-motion';
 
 function Home() {
   const phrases = ['junior', 'web developer', 'competitive programmer', 'singer', 'runner'];
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <div id='home' className={`h-screen w-screen flex justify-center items-center cBackground text-white`}>
-        <div className='p-5 text-center'>
+        <motion.div initial={{ opacity : 0 }} animate={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className='p-5 text-center'>
             <h1 className='text-4xl'>
             Hi, I'm <b className='secondary'>Eric Chen</b>, and I'm a{' '}
             <span id='changingText' className={`${fade ? 'fade-in' : 'fade-out'} accent`}>
@@ -31,7 +32,7 @@ function Home() {
             </span>{' '}
             from Texas.
             </h1>
-        </div>
+        </motion.div>
     </div>
   );
 }

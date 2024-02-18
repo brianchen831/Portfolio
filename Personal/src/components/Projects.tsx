@@ -1,5 +1,6 @@
 import '../index.css';
 import Card from './Card';
+import CardRight from './CardRight';
 
 function Projects() {
   
@@ -9,7 +10,7 @@ function Projects() {
             <h1 className='m-3 text-5xl font-extrabold secondary'>PROJECTS AND ACHIEVEMENTS</h1>
             <h1 className='m-3 text-xl font-extrabold primary'>Websites, School Projects, Competitive Programming</h1>
         </div>
-        <div className='flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-10'>
+        <div className='flex flex-col w-full justify-center items-center gap-20'>
             <Card
             imageUrl="https://fakeimg.pl/600x400"
             title="Interstellar"
@@ -18,7 +19,23 @@ function Projects() {
             button1Href='https://santiago11234.github.io/InterStellar/'
             button2Href='https://github.com/Eric8900/InterStellar'
             />
+            <CardRight
+            imageUrl="https://fakeimg.pl/600x400"
+            title="Personal Website"
+            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'TypeScript', color: 'cBackground' }, { text: 'React', color: 'cBackground' }, { text: 'Tailwind CSS', color: 'cBackground' }, { text: 'Vite', color: 'cBackground' }, { text: 'Framer Motion', color: 'cBackground' }]}
+            description="This is the website that you are on, and I used ReactTS along with Tailwind. In developing this website, I further expanded my React and Tailwind knowledge by learning how to make components such as the Navbar and optimize the website for mobile devices."
+            button1Href='https://santiago11234.github.io/InterStellar/'
+            button2Href='https://github.com/Eric8900/InterStellar'
+            />
             <Card
+            imageUrl="https://fakeimg.pl/600x400"
+            title="Pigeon Project (Non-Profit)"
+            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'TypeScript', color: 'cBackground' }, { text: 'React', color: 'cBackground' }, { text: 'Tailwind CSS', color: 'cBackground' }, { text: 'Vite', color: 'cBackground' }, { text: 'Framer Motion', color: 'cBackground' }]}
+            description="This is the website created in ReactTS for a non-profit aimed at providing academic support to underprivileged children in my local community, bridging the socio-economic gap in our community."
+            button1Href='https://santiago11234.github.io/InterStellar/'
+            button2Href='https://github.com/Eric8900/InterStellar'
+            />
+            <CardRight
             imageUrl="https://fakeimg.pl/600x400"
             title="GPT Plus"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'OpenAI API', color: 'cBackground' }]}
@@ -34,7 +51,7 @@ function Projects() {
             button1Href='eric8900.github.io/Maze-Builder/'
             button2Href='https://github.com/Eric8900/Maze-Builder'
             />
-            <Card
+            <CardRight
             imageUrl="https://fakeimg.pl/600x400"
             title="Wordle Game"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }]}

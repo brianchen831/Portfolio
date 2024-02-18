@@ -21,44 +21,43 @@ html {
 }
 
 /* COLORS */
-.cBackground {
-  background-color: #202021;
-}
-.bg-p {
-  background-color: #0081AF;
-}
-.bg-s {
-  background-color: #5ED4FF;
-}
-.bg-a {
-  background-color: #00BB99;
-}
-.primary {
-  color: #0081AF;
-}
-.secondary {
-  color: #5ED4FF;
-}
-.accent {
-  color: #00BB99;
-}
-.backColor {
-  color: #202021;
-}
-.fill-bg {
-  fill: #202021;
-}
-.fill-bgH:hover {
-  fill: #202021;
-}
-.fill-p:hover {
-  fill: #0081AF;
-}
-.fill-s:hover {
-  fill: #5ED4FF;
-}
-.fill-a:hover {
-  fill: #00BB99;
+@layer utilities{
+  .cBackground {
+    background-color: #202021;
+  }
+  .bg-p {
+    background-color: #0081AF;
+  }
+  .bg-s {
+    background-color: #5ED4FF;
+  }
+  .bg-a {
+    background-color: #00BB99;
+  }
+  .primary {
+    color: #0081AF;
+  }
+  .secondary {
+    color: #5ED4FF;
+  }
+  .accent {
+    color: #00BB99;
+  }
+  .backColor {
+    color: #202021;
+  }
+  .fill-bg {
+    fill: #202021;
+  }
+  .fill-p {
+    fill: #0081AF;
+  }
+  .fill-s {
+    fill: #5ED4FF;
+  }
+  .fill-a {
+    fill: #00BB99;
+  }
 }
 /* COLORS */
 .fade-in {

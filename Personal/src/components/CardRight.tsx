@@ -15,10 +15,10 @@ type CardProps = {
   button2Href: string;
 };
 
-const Card: React.FC<CardProps> = ({ imageUrl, title, badges, description, button1Href, button2Href }) => {
+const CardRight: React.FC<CardProps> = ({ imageUrl, title, badges, description, button1Href, button2Href }) => {
   return (
     <div className="w-4/5 flex flex-col xl:flex-row rounded overflow-hidden text-white m-5 lg:m-0 bg-[#2F2F2F]">
-      <img className="w-full" src={imageUrl} alt="Top Section" />
+      <img className="w-full block xl:hidden" src={imageUrl} alt="Top Section" />
       <div className="w-full px-6 py-4 flex flex-col justify-between">
         <div>
           <div className="font-bold text-3xl md:text-5xl my-5 md:my-10">{title}</div>
@@ -40,8 +40,9 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, badges, description, butto
           </a>
         </div>
       </div>
+      <img className="w-full hidden xl:block" src={imageUrl} alt="Top Section" />
     </div>
   );
 };
 
-export default Card;
+export default CardRight;

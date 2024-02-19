@@ -19,9 +19,8 @@ function Navbar() {
   const toggleMenu = () => {
     if (!isMobileMenuOpen) {
       setIsMobileMenuOpen(true);
-      // Don't setShowNavLinks here; wait for onAnimationComplete
     } else {
-      setShowNavLinks(false); // Immediately hide links when starting to close
+      setShowNavLinks(false);
       setIsMobileMenuOpen(false);
     }
   };
@@ -102,8 +101,8 @@ function Navbar() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ ease: [0.1, 1, 0.2, 1], type : "spring", stiffness : 100 }}
-                    onAnimationComplete={() => setShowNavLinks(true)}
+                    transition={{ ease: [0.1, 1, 0.2, 1], type : "spring", duration : 0.5 }}
+                    onAnimationComplete={() => {setShowNavLinks(true); console.log("complete")}}
                     className="w-fit h-fit right-0 absolute flex flex-col items-center bg-a rounded"
                     >   
                         {showNavLinks && (

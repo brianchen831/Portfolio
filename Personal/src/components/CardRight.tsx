@@ -24,7 +24,7 @@ const CardRight: React.FC<CardProps> = ({ imageUrl, title, badges, description, 
           <div className="font-bold text-3xl md:text-5xl my-5 md:my-10">{title}</div>
           <div className="my-5 md:my-10 text-sm md:text-xl">
             {badges.map((badge, index) => (
-              <span key={index} className={`inline-block ${badge.color} rounded px-3 py-1 bg-p font-semibold text-white mr-2 mb-2`}>
+              <span key={index} className={`inline-block ${badge.color} rounded px-3 py-1 cBackground font-semibold text-white mr-2 mb-2`}>
                 {badge.text}
               </span>
             ))}
@@ -32,10 +32,10 @@ const CardRight: React.FC<CardProps> = ({ imageUrl, title, badges, description, 
           <p className="text-gray-300 my-5 md:my-10 text-sm md:text-lg">{description}</p>
         </div>
         <div className='py-5 md:py-10'>
-          <a href={button1Href} target="_blank" rel="noopener noreferrer" className="text-xl bg-a hover:bg-white hover:text-gray-900 transition-all ease-in-out duration-300 text-white font-bold py-[0.8rem] mr-2 px-4 rounded">
+          <a href={button1Href} target="_blank" rel="noopener noreferrer" className="text-md lg:text-xl bg-a hover:bg-white hover:text-gray-900 transition-all ease-in-out duration-300 text-white font-bold py-[0.8rem] mr-2 px-4 rounded">
             Learn More
           </a>
-          <a href={button2Href} target="_blank" rel="noopener noreferrer" className="text-xl bg-a hover:bg-white hover:text-gray-900 transition-all ease-in-out duration-300 text-white font-bold py-[0.8rem] ml-2 px-4 rounded">
+          <a href={button2Href} target="_blank" rel="noopener noreferrer" className="text-md lg:text-xl bg-a hover:bg-white hover:text-gray-900 transition-all ease-in-out duration-300 text-white font-bold py-[0.8rem] ml-2 px-4 rounded">
             Code
           </a>
         </div>

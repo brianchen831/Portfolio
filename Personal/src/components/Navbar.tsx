@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 function Navbar() {
   const [highlightStyle, setHighlightStyle] = useState<React.CSSProperties>({});
   const navRef = useRef<HTMLDivElement>(null);
-  const [showNavLinks, setShowNavLinks] = useState(false);
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const { offsetLeft, offsetWidth } = event.currentTarget;
@@ -16,14 +15,17 @@ function Navbar() {
     });
   };
 
-  const toggleMenu = () => {
-    if (!isMobileMenuOpen) {
-      setIsMobileMenuOpen(true);
-    } else {
-      setShowNavLinks(false);
-      setIsMobileMenuOpen(false);
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.1 }
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 0, delay: 0 } // Exit transition
     }
-  };
+  };   
 
   const handleMouseLeave = () => {
     setHighlightStyle({});
@@ -91,22 +93,20 @@ function Navbar() {
                         <span className="transition-all duration-300 ease-in-out">Eric Chen</span>
                     </motion.div>    
                 </a>
-                <button onClick={toggleMenu} className="lg:hidden px-3 py-2 right-2 absolute">
+                <button onClick={() => {setIsMobileMenuOpen(!isMobileMenuOpen)}} className="lg:hidden px-3 py-2 right-2 absolute">
                     <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
+                    initial={{ height: 0 }}
+                    animate={{ height: 'auto' }}
+                    exit={{ height : 0}}
                     transition={{ ease: [0.1, 1, 0.2, 1], type : "spring", duration : 0.5 }}
-                    onAnimationComplete={() => {setShowNavLinks(true); console.log("complete")}}
                     className="w-fit h-fit right-0 absolute flex flex-col items-center bg-a rounded"
                     >   
-                        {showNavLinks && (
-                            <>
+                            <motion.div initial="hidden" animate="visible" exit="exit" variants={variants} className='flex flex-col items-center bg-a rounded'>
                                 {['Home', 'About', 'Projects', 'Contact'].map((item, index) => (
                                 <a key={index} href={`/#${item.toLowerCase()}`} onMouseEnter={handleMouseEnter} className="block px-5 py-3 hover:font-bold">
                                     <span className="transition-all duration-300 ease-in-out">{item}</span>
@@ -135,8 +135,7 @@ function Navbar() {
                                 >
                                     <svg className="h-10 w-10 fill-white transition-all duration-300 ease-in-out hover:fill-p hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                                 </a>
-                            </>
-                        )}
+                            </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>

@@ -12,7 +12,7 @@ function Projects() {
         </div>
         <div className='flex flex-col w-full justify-center items-center gap-20'>
             <Card
-            imageUrl="https://fakeimg.pl/600x400"
+            imageUrl="/Interstellar.png"
             title="Interstellar"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'ThreeJS', color: 'cBackground' }]}
             description="This is the website for my Webmaster project in Technology Student Association (TSA). It is intended to promote space exploration and tourism."
@@ -36,7 +36,7 @@ function Projects() {
             button2Href='https://github.com/AshmeetC/PigeonProject'
             />
             <CardRight
-            imageUrl="https://fakeimg.pl/600x400"
+            imageUrl="/GPTPlus.png"
             title="GPT Plus"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'OpenAI API', color: 'cBackground' }]}
             description="I created this project to not only save money on GPT-4 but also to learn more about APIs and front-end development with Bootstrap."

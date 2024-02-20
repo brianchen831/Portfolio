@@ -38,7 +38,7 @@ function Navbar() {
         <div className="lg:flex w-screen hidden py-5 px-3 justify-between items-center backdrop-blur fixed">
             <a
             href="/#home"
-            className="px-5 py-3 relative overflow-hidden text-2xl hover:font-bold secondary"
+            className="px-5 py-3 relative overflow-hidden text-2xl font-extrabold hover:font-[1000] secondary"
             >
                 <motion.div initial={{ width : 0 }} animate={{ width : '100%'}} transition={{ ease: "easeInOut", duration: 1.5 }} className='whitespace-nowrap overflow-hidden tracking-normal'>
                     <span className="transition-all duration-300 ease-in-out">Eric Chen</span>

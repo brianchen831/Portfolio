@@ -88,7 +88,7 @@ function Navbar() {
         {/* Mobile Navbar */}
         <div className='lg:hidden visible'>
             <div className='backdrop-blur flex px-5 py-5 justify-between'>
-                <a href="/#home" className="text-4xl hover:font-bold justify-start secondary">
+                <a href="/#home" className="text-4xl font-extrabold hover:font-[1000] justify-start secondary">
                     <motion.div initial={{ width : 0 }} animate={{ width : '100%'}} transition={{ ease: "easeInOut", duration: 1.5 }} className='whitespace-nowrap overflow-hidden tracking-normal'>
                         <span className="transition-all duration-300 ease-in-out">Eric Chen</span>
                     </motion.div>    

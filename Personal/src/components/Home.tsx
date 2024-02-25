@@ -21,7 +21,7 @@ function Home() {
     const intervalId = setInterval(changePhrase, 3000);
 
     return () => clearInterval(intervalId);
-  }, [currentPhrase]);
+  }, [currentPhrase, phrases]);
 
   return (
     <div id='home' className={`h-screen w-screen flex justify-center items-center text-white`}>

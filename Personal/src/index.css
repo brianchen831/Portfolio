@@ -4,7 +4,8 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #202021;
+  background-color: #0B0B0B;
+  overflow-x: hidden;
 }
 
 /* FONT */
@@ -17,13 +18,13 @@ html {
 
 ::selection {
   background-color: #00BB99;
-  color: #202021;
+  color: #0B0B0B;
 }
 
 /* COLORS */
 @layer utilities{
   .cBackground {
-    background-color: #202021;
+    background-color: #0B0B0B;
   }
   .bg-p {
     background-color: #0081AF;
@@ -44,10 +45,10 @@ html {
     color: #00BB99;
   }
   .backColor {
-    color: #202021;
+    color: #0B0B0B;
   }
   .fill-bg {
-    fill: #202021;
+    fill: #0B0B0B;
   }
   .fill-p {
     fill: #0081AF;

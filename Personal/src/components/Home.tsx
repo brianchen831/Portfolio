@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import '../index.css';
 import { motion } from 'framer-motion';
+import { WavyBackground } from './WavyBackground';
 
 function Home() {
-  const phrases = ['junior', 'web developer', 'competitive programmer', 'world traveler', 'gamer', 'singer', 'sprinter'];
+  const phrases = ['junior', 'web developer', 'competitive programmer', 'world traveler', 'singer', 'sprinter'];
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
   const [fade, setFade] = useState(true);
 
@@ -23,17 +24,21 @@ function Home() {
   }, [currentPhrase]);
 
   return (
-    <div id='home' className={`h-screen w-screen flex justify-center items-center cBackground text-white`}>
+    <WavyBackground children={
+      <>
+       <div id='home' className={`h-screen w-screen flex justify-center items-center text-white`}>
         <motion.div initial={{ opacity : 0 }} animate={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className='p-5 text-center'>
             <h1 className='text-4xl'>
-            Hi, I'm <b className='secondary'>Eric Chen</b>, and I'm a{' '}
-            <span id='changingText' className={`${fade ? 'fade-in' : 'fade-out'} accent`}>
+            Hi, I'm <b className='text-4xl text-4xl text-[#00ffea]'>Eric Chen</b>, and I'm a{' '}
+            <span id='changingText' className={`${fade ? 'fade-in' : 'fade-out'} text-4xl text-[#00ffea]`}>
                 {currentPhrase}
             </span>{' '}
             from Texas.
             </h1>
         </motion.div>
     </div>
+      </>
+    } backgroundFill='#0B0B0B'/>
   );
 }
 

@@ -1,16 +1,15 @@
 import '../index.css';
 import Card from './Card';
-import CardRight from './CardRight';
 
 function Projects() {
   
   return (
     <div id='projects' className='w-screen pt-28 pb-40 cBackground flex justify-center flex-col cBackground items-center text-white'>
         <div className='text-center m-20'>
-            <h1 className='m-3 text-5xl font-extrabold secondary'>PROJECTS AND ACHIEVEMENTS</h1>
-            <h1 className='m-3 text-xl font-extrabold primary'>Websites, School Projects, Competitive Programming</h1>
+            <h1 className='m-3 text-5xl font-extrabold text-4xl bg-gradient-to-t from-gray-600 to-gray-500 inline-block text-transparent bg-clip-text'>PROJECTS AND ACHIEVEMENTS</h1>
+            <h1 className='m-3 text-xl font-extrabold text-white opacity-60'>Websites, School Projects, Competitive Programming</h1>
         </div>
-        <div className='flex flex-col w-full justify-center items-center gap-20'>
+        <div className='flex flex-row flex-wrap w-full justify-center items-center gap-10'>
             <Card
             imageUrl="/Interstellar.png"
             title="Interstellar"
@@ -19,7 +18,7 @@ function Projects() {
             button1Href='https://santiago11234.github.io/InterStellar/'
             button2Href='https://github.com/Eric8900/InterStellar'
             />
-            <CardRight
+            <Card
             imageUrl="https://fakeimg.pl/600x400"
             title="Personal Website"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'TypeScript', color: 'cBackground' }, { text: 'React', color: 'cBackground' }, { text: 'Tailwind CSS', color: 'cBackground' }, { text: 'Vite', color: 'cBackground' }, { text: 'Framer Motion', color: 'cBackground' }]}
@@ -35,7 +34,7 @@ function Projects() {
             button1Href='https://pigeonproject.vercel.app/'
             button2Href='https://github.com/AshmeetC/PigeonProject'
             />
-            <CardRight
+            <Card
             imageUrl="/GPTPlus.png"
             title="GPT Plus"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'OpenAI API', color: 'cBackground' }]}
@@ -51,7 +50,7 @@ function Projects() {
             button1Href='https://eric8900.github.io/Maze-Builder/'
             button2Href='https://github.com/Eric8900/Maze-Builder'
             />
-            <CardRight
+            <Card
             imageUrl="https://fakeimg.pl/600x400"
             title="Wordle Game"
             badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }]}

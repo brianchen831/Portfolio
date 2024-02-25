@@ -17,7 +17,7 @@ html {
 }
 
 ::selection {
-  background-color: #00BB99;
+  background-color: #7dd3fc;
   color: #0B0B0B;
 }
 
@@ -33,7 +33,7 @@ html {
     background-color: #5ED4FF;
   }
   .bg-a {
-    background-color: #00BB99;
+    background-color: #7dd3fc;
   }
   .primary {
     color: #0081AF;
@@ -42,7 +42,7 @@ html {
     color: #5ED4FF;
   }
   .accent {
-    color: #00BB99;
+    color: #7dd3fc;
   }
   .backColor {
     color: #0B0B0B;
@@ -57,7 +57,7 @@ html {
     fill: #5ED4FF;
   }
   .fill-a {
-    fill: #00BB99;
+    fill: #7dd3fc;
   }
 }
 /* COLORS */

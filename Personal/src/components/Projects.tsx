@@ -1,63 +1,43 @@
 import '../index.css';
 import Card from './Card';
+import projectData from '../data/projects.json';
+import { WordSection } from './WordSection';
+// import { motion } from 'framer-motion';
 
 function Projects() {
   
   return (
     <div id='projects' className='w-screen pt-28 pb-40 cBackground flex justify-center flex-col cBackground items-center text-white'>
-        <div className='text-center m-20'>
-            <h1 className='m-3 text-5xl font-extrabold text-4xl bg-gradient-to-t from-gray-600 to-gray-500 inline-block text-transparent bg-clip-text'>PROJECTS AND ACHIEVEMENTS</h1>
-            <h1 className='m-3 text-xl font-extrabold text-white opacity-60'>Websites, School Projects, Competitive Programming</h1>
+        <div className='text-center my-20'>
+            <h1 className='m-3 text-5xl font-extrabold bg-gradient-to-r from-sky-300 via-cyan-300 to-sky-400 inline-block text-transparent bg-clip-text'>PROJECTS AND ACHIEVEMENTS</h1>
         </div>
         <div className='flex flex-row flex-wrap w-full justify-center items-center gap-10'>
-            <Card
-            imageUrl="/Interstellar.png"
-            title="Interstellar"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'ThreeJS', color: 'cBackground' }]}
-            description="This is the website for my Webmaster project in Technology Student Association (TSA). It is intended to promote space exploration and tourism."
-            button1Href='https://santiago11234.github.io/InterStellar/'
-            button2Href='https://github.com/Eric8900/InterStellar'
-            />
-            <Card
-            imageUrl="https://fakeimg.pl/600x400"
-            title="Personal Website"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'TypeScript', color: 'cBackground' }, { text: 'React', color: 'cBackground' }, { text: 'Tailwind CSS', color: 'cBackground' }, { text: 'Vite', color: 'cBackground' }, { text: 'Framer Motion', color: 'cBackground' }]}
-            description="This is the website that you are on, and I used ReactTS along with Tailwind. In developing this website, I further expanded my React and Tailwind knowledge by learning how to make components such as the Navbar and optimize the website for mobile devices."
-            button1Href='https://personal-eric8900.vercel.app/'
-            button2Href='https://github.com/Eric8900/Personal'
-            />
-            <Card
-            imageUrl="https://fakeimg.pl/600x400"
-            title="Pigeon Project (Non-Profit)"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'TypeScript', color: 'cBackground' }, { text: 'React', color: 'cBackground' }, { text: 'Tailwind CSS', color: 'cBackground' }, { text: 'Vite', color: 'cBackground' }, { text: 'Framer Motion', color: 'cBackground' }]}
-            description="This is the website created in ReactTS for a non-profit aimed at providing academic support to underprivileged children in my local community, bridging the socio-economic gap in our community."
-            button1Href='https://pigeonproject.vercel.app/'
-            button2Href='https://github.com/AshmeetC/PigeonProject'
-            />
-            <Card
-            imageUrl="/GPTPlus.png"
-            title="GPT Plus"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'OpenAI API', color: 'cBackground' }]}
-            description="I created this project to not only save money on GPT-4 but also to learn more about APIs and front-end development with Bootstrap."
-            button1Href='https://gptplus.onrender.com/'
-            button2Href='https://github.com/Eric8900'
-            />
-            <Card
-            imageUrl="https://fakeimg.pl/600x400"
-            title="Maze Builder"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }, { text: 'Bootstrap', color: 'cBackground' }, { text: 'A* Algorithm', color: 'cBackground' }]}
-            description="This is my maze builder project in which I worked with HTML Canvas to create a maze, and I learned about and implemented the A* algorithm for the maze solution."
-            button1Href='https://eric8900.github.io/Maze-Builder/'
-            button2Href='https://github.com/Eric8900/Maze-Builder'
-            />
-            <Card
-            imageUrl="https://fakeimg.pl/600x400"
-            title="Wordle Game"
-            badges={[{ text: 'HTML', color: 'cBackground' }, { text: 'CSS', color: 'cBackground' }, { text: 'JavaScript', color: 'cBackground' }]}
-            description="This is my recreation of the popular word guessing game Wordle for a school project."
-            button1Href='https://eric8900.github.io/Wordle-Clone/'
-            button2Href='https://github.com/Eric8900/Wordle-Clone'
-            />
+            {projectData.map((project, index) => (
+                <Card
+                    key={index}
+                    imageUrl={project.imageUrl}
+                    title={project.title}
+                    badges={project.badges}
+                    button1Href={project.button1Href}
+                />
+            ))}
+        </div>
+        <div className='py-80'>
+          <WordSection words={`Aside from projects, I like to do `}>
+            <><span className="inline font-[800] text-5xl bg-gradient-to-r from-sky-400 via-purple-500 to-sky-400 text-transparent bg-clip-text">competitive programming</span></>
+          </WordSection>
+        </div>
+        <div className='flex flex-col gap-y-40 text-6xl sm:text-7xl md:text-8xl lg:text-9xl flex-wrap'>
+          <WordSection words={`I have reached the`}>
+            {/* <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} viewport={{ once : true}} className='p-5 text-center'> */}
+            <h1 className={`font-[800] text-sky-400 inline`}>USACO Gold Division</h1>
+            {/* </motion.div> */}
+          </WordSection>
+          <WordSection words={`I also do `}>
+            {/* <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} viewport={{ once : true}} className='p-5 text-center'> */}
+            <h1 className={`font-[800] text-sky-400 inline`}>Codeforces</h1>
+            {/* </motion.div> */}
+          </WordSection>
         </div>
     </div>
   );

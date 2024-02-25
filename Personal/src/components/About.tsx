@@ -7,12 +7,11 @@ function About() {
   return (
     <div id='about' className='h-full w-screen pt-28 pb-28 cBackground flex justify-center flex-col lg:flex-row items-center text-white'>
       {/* style={{ backgroundImage: `url(/blurry-gradient-haikei.png)`, backgroundSize: 'cover' }} */}
-        <div className='m-10 w-full h-full '>
+        <div className='my-10 w-full h-full '>
             <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 1 }} viewport={{once: true,}}>
-              <h1 className='m-3 text-5xl font-extrabold text-4xl bg-gradient-to-t from-gray-600 to-gray-500 inline-block text-transparent bg-clip-text'>
+              <h1 className='m-3 text-5xl font-extrabold bg-gradient-to-r from-sky-300 via-cyan-300 to-sky-400 inline-block text-transparent bg-clip-text'>
                   ABOUT ME
               </h1>
-              <h1 className='m-3 text-xl font-extrabold opacity-60'>Programming, Music, Traveling</h1>
             </motion.div>
             <motion.div initial={{ y : 50 }} whileInView={{ y : 0 }} transition={{ ease: "easeInOut", duration: 0.3 }} viewport={{once: true,}}>
               <p className='text-left m-4 text-xl text-gray-300'>
@@ -26,7 +25,7 @@ function About() {
               </p>
             </motion.div>
         </div>
-        <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 1 }} viewport={{once: true,}} className='m-10 w-full h-full'>
+        <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 1 }} viewport={{once: true,}} className='my-10 w-full h-full'>
             <img className='rounded p-5 lg:p-0' src={`${aboutImage}`} alt="Image of Me" />
         </motion.div>
     </div>

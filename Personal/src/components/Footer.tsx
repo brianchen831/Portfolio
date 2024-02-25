@@ -3,8 +3,8 @@ import '../index.css';
 function Footer() {
   
   return (
-    <div id='footer' className='bg-gradient-to-t from-gray-600 to-gray-500'>
-        <svg className="fill-[#0B0B0B]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="16:9">
+    <div id='footer' className='bg-gradient-to-r from-sky-300 via-cyan-300 to-sky-400'>
+        <svg className="fill-[#0B0B0B]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
         </svg>
         <div className='w-screen pb-10 pt-10 flex justify-center items-center text-center flex-col backColor'>
@@ -14,8 +14,8 @@ function Footer() {
             >
                 <span className="transition-all duration-300 ease-in-out">Eric Chen</span>
             </a>
-            <svg className='my-10 w-20 h-2 stroke-gray-900' xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="5" x2="100" y2="5" stroke-width="2" />
+            <svg className='my-10 w-20 h-2 stroke-[#0B0B0B]' xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="5" x2="100" y2="5" strokeWidth="2" />
             </svg>
             <div className='inline-flex'>
               <a
@@ -39,7 +39,6 @@ function Footer() {
                     <svg className="h-10 w-10 transition-all duration-300 ease-in-out fill-bg hover:fill-a hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </a>
             </div>
-            <h1 className='text-xl w-3/6'>Whether I'm traversing new landscapes, solving complex algorithms in competitive programming, or crafting intuitive web designs, each step is a part of my journey. Let's connect and share the adventure!</h1>
             </div>
         </div>
   );

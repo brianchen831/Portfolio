@@ -60,6 +60,33 @@
       "button2Href": "https://github.com/Eric8900"
     },
     {
+      "imageUrl": "/GradeCalculatorPlus.png",
+      "title": "HAC Grade Calculator",
+      "badges": [
+        { "text": "HTML", "color": "cBackground" },
+        { "text": "CSS", "color": "cBackground" },
+        { "text": "JavaScript", "color": "cBackground" },
+        { "text": "Tailwind CSS", "color": "cBackground" },
+        { "text": "Home Access API", "color": "cBackground" }
+      ],
+      "description": "",
+      "button1Href": "https://github.com/Eric8900/GradeCalculatorPlus",
+      "button2Href": "https://eric8900.github.io/GradeCalculatorPlus/"
+    },
+    {
+      "imageUrl": "/HomeAccessAPI.png",
+      "title": "Home Access Center API",
+      "badges": [
+        { "text": "Python", "color": "cBackground" },
+        { "text": "Flask", "color": "cBackground" },
+        { "text": "Beautiful Soup", "color": "cBackground" },
+        { "text": "Requests-HTML", "color": "cBackground" }
+      ],
+      "description": "",
+      "button1Href": "https://github.com/Eric8900/HomeAccessAPI-Python",
+      "button2Href": "https://home-access-api-python.vercel.app/api"
+    },
+    {
       "imageUrl": "/MazeBuilderImg.png",
       "title": "Maze Builder",
       "badges": [

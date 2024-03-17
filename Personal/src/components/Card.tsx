@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, badges, button1Href }) => 
           <div className="text-sm !m-0 !p-0 font-normal">
             <span className="text-slate-500">
             {badges.map((badge, index) => (
-              <span key={index} className={`inline-block ${badge.color} rounded px-3 py-1 bg-gray-700 font-semibold text-white mr-2 mb-2`}>
+              <span key={index} className={`inline-block rounded px-3 py-1 bg-zinc-900 font-semibold text-white mr-2 mb-2`}>
                 {badge.text}
               </span>
             ))}

@@ -22,20 +22,18 @@ function Projects() {
                 />
             ))}
         </div>
-        <div className='py-80'>
-          <WordSection words={`Aside from projects, I like to do `}>
+        <div className='flex flex-col gap-y-40 py-60 text-6xl sm:text-7xl md:text-8xl lg:text-9xl flex-wrap mx-5 md:mx-0'>
+          <WordSection words={`In terms of `}>
             <><span className="inline font-[800] text-5xl bg-gradient-to-r from-sky-400 via-purple-500 to-sky-400 text-transparent bg-clip-text">competitive programming</span></>
           </WordSection>
-        </div>
-        <div className='flex flex-col gap-y-40 text-6xl sm:text-7xl md:text-8xl lg:text-9xl flex-wrap'>
           <WordSection words={`I have reached the`}>
             {/* <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} viewport={{ once : true}} className='p-5 text-center'> */}
             <h1 className={`font-[800] text-sky-400 inline`}>USACO Gold Division</h1>
             {/* </motion.div> */}
           </WordSection>
-          <WordSection words={`I also do `}>
+          <WordSection words={`and was a part of `}>
             {/* <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} viewport={{ once : true}} className='p-5 text-center'> */}
-            <h1 className={`font-[800] text-sky-400 inline`}>Codeforces</h1>
+            <h1 className={`font-[800] text-sky-400 inline`}>UCF's CPSI</h1>
             {/* </motion.div> */}
           </WordSection>
         </div>

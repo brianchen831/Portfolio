@@ -105,6 +105,18 @@
       "button2Href": "https://home-access-api-python.vercel.app/api"
     },
     {
+      "imageUrl": "/CFDataset.png",
+      "title": "ML Codeforces Dataset",
+      "badges": [
+        { "text": "Python", "color": "cBackground" },
+        { "text": "Beautiful Soup", "color": "cBackground" },
+        { "text": "Requests-HTML", "color": "cBackground" }
+      ],
+      "description": "",
+      "button1Href": "https://github.com/Eric8900/Codeforces-Webscrape",
+      "button2Href": "https://www.kaggle.com/datasets/erchhh/codeforces-problemset"
+    },
+    {
       "imageUrl": "/MazeBuilderImg.png",
       "title": "Maze Builder",
       "badges": [

@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Projects/>
       <Contact/>
       <Footer/>
+      <Analytics/>
     </>
   )
 }

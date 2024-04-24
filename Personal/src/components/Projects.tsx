@@ -28,7 +28,7 @@ function Projects() {
           </WordSection>
           <WordSection words={`I have reached the`}>
             {/* <motion.div initial={{ opacity : 0 }} whileInView={{ opacity : 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} viewport={{ once : true}} className='p-5 text-center'> */}
-            <h1 className={`font-[800] text-sky-400 inline`}>USACO Gold Division</h1>
+            <h1 className={`font-[800] text-sky-400 inline`}>USACO Platinum Division</h1>
             {/* </motion.div> */}
           </WordSection>
           <WordSection words={`and was a part of `}>
